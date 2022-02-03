@@ -46,12 +46,12 @@ export default function Header() {
                 <Box flex={1} ml={2}><Link href={""}><img src={"./logo.svg"} alt="Deneme"/></Link></Box>
                 <Stack mr={3} direction="row" gap={{md: 3, lg: 4, xl: 5}} alignItems="center"
                        display={{xs: "none", md: "flex"}}>
-                    <Box><Link isActive href={"/"}>Home</Link></Box>
-                    <Box><Link color={"#4E5C66"} href={""}>Pages</Link></Box>
-                    <Box><Link color={"#4E5C66"} href={""}>Products</Link></Box>
-                    <Box><Link color={"#4E5C66"} href={""}>Blog</Link></Box>
-                    <Box><Link color={"#4E5C66"} href={""}>Shop</Link></Box>
-                    <Box><Link color={"#4E5C66"} href={""}>Contact Us</Link></Box>
+                    <Box><Link href={"/"}>Home</Link></Box>
+                    <Box><Link color={"#4E5C66"} href={"/pages"}>Pages</Link></Box>
+                    <Box><Link color={"#4E5C66"} href={"/products"}>Products</Link></Box>
+                    <Box><Link color={"#4E5C66"} href={"/blog"}>Blog</Link></Box>
+                    <Box><Link color={"#4E5C66"} href={"/shop"}>Shop</Link></Box>
+                    <Box><Link color={"#4E5C66"} href={"/contact-us"}>Contact Us</Link></Box>
                 </Stack>
                 <Box display={["block", "block", "none"]}>
                     <Button onClick={() => set_menu_open(true)}>
@@ -66,7 +66,7 @@ export default function Header() {
                 >
                     <Stack margin={2}>
                         <Box alignSelf={"center"}><Link href={"/"}><img src="" alt="Deneme"/></Link></Box>
-                        <Box paddingX={2} paddingY={1}><Link isActive href={"/"}>Home</Link></Box>
+                        <Box paddingX={2} paddingY={1}><Link  href={"/"}>Home</Link></Box>
                         <Box paddingX={2} paddingY={1}><Link color={"#4E5C66"} href={""}>Pages</Link></Box>
                         <Box paddingX={2} paddingY={1}><Link color={"#4E5C66"} href={""}>Products</Link></Box>
                         <Box paddingX={2} paddingY={1}><Link color={"#4E5C66"} href={""}>Blog</Link></Box>
